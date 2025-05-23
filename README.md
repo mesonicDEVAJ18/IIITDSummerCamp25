@@ -17,7 +17,7 @@ MIT Licensed.
 
 | Home Page | TLF Intro | Summer Intro |
 |-----------|-----------|---------------|
-| ![Home Page](preview/Home%20Page.png) | ![TLF Intro](preview/TLF%20Intro.png) | ![Summer Intro](preview/Summer%20Intro.png) |
+| ![Home Page](Preview/Home%20Page.png) | ![TLF Intro](Preview/TLF%20Intro.png) | ![Summer Intro](Preview/Summer%20Intro.png) |
 
 ## 🚀 Running Locally
 
