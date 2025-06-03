@@ -15,8 +15,29 @@ export const SiteSelector: React.FC<SiteSelectorProps> = ({ onSelect }) => {
         <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-blue-600/20 to-transparent" />
         
         {/* Decorative Shapes */}
-        <div className="absolute top-20 left-20 w-64 h-64 bg-yellow-400 rounded-xl rotate-12 opacity-20 animate-float" />
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-blue-600 rounded-xl -rotate-12 opacity-20 animate-float" />
+        <div className="relative w-full h-full overflow-hidden">
+          {/* Large yellow square - top left */}
+          <div className="absolute top-10 left-5 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-yellow-400 rounded-xl rotate-12 opacity-20 animate-float" />
+
+          {/* Medium blue rectangle - top center */}
+          <div className="absolute top-24 left-1/2 -translate-x-1/2 w-32 sm:w-48 h-20 sm:h-24 bg-blue-600 rounded-lg -rotate-6 opacity-20 animate-float delay-100" />
+
+          {/* Tall yellow rectangle - left middle */}
+          <div className="absolute top-1/2 left-60 w-16 sm:w-20 h-40 sm:h-60 bg-yellow-400 rounded-md rotate-6 opacity-20 animate-float delay-200" />
+
+          {/* Square blue - center right */}
+          <div className="absolute top-1/3 right-10 w-24 sm:w-32 h-24 sm:h-32 bg-blue-600 rounded-xl rotate-12 opacity-20 animate-float delay-300" />
+
+          {/* Large blue rectangle - bottom right */}
+          <div className="absolute bottom-10 right-5 sm:right-20 w-40 sm:w-64 h-24 sm:h-40 bg-blue-600 rounded-xl -rotate-12 opacity-20 animate-float delay-400" />
+
+          {/* Yellow square - bottom center */}
+          <div className="absolute bottom-16 left-1/2 -translate-x-1/2 w-24 sm:w-32 h-24 sm:h-32 bg-yellow-400 rounded-lg rotate-12 opacity-20 animate-float delay-500" />
+
+          {/* Small blue square - bottom left */}
+          <div className="absolute bottom-10 left-10 w-16 h-16 bg-blue-600 rounded-md -rotate-6 opacity-20 animate-float delay-600" />
+        </div>
+
       </div>
 
       <div className="relative z-10 container mx-auto px-6 py-16">
