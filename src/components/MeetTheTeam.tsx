@@ -13,7 +13,6 @@ interface MeetTheTeamProps {
 
 const MeetTheTeam: React.FC<MeetTheTeamProps> = ({ theme }) => {
   const teamMembers: TeamMember[] = [
-    { name: "Brij Mohan", role: "Chief Guest", photo: "/People/BrijMohan.png" },
     { name: "Ranjan Bose", role: "IIIT Delhi Director", photo: "/People/RanjanBose.jpg" },
     { name: "Pankaj Jalote", role: "Faculty Coordinator", photo: "/People/PankajJalote.jpg" },
     { name: "Ravi Bhasin", role: "Academic Manager", photo: "/People/RaviBhasin.jpg" },
@@ -60,8 +59,8 @@ const MeetTheTeam: React.FC<MeetTheTeamProps> = ({ theme }) => {
     },
   ];
 
-  const faculty = teamMembers.slice(0,5);
-  const students = teamMembers.slice(5);
+  const faculty = teamMembers.slice(0,4);
+  const students = teamMembers.slice(4);
 
   const primaryColor = theme === "summer" ? "text-yellow-400" : "text-blue-600";
   const secondaryColor = theme === "summer" ? "text-blue-600" : "text-yellow-400";
