@@ -140,7 +140,7 @@ export const SiteSelector: React.FC<SiteSelectorProps> = ({ onSelect }) => {
         <footer className="text-center mt-6 text-sm text-gray-500">
           <div className="flex justify-center items-center gap-4 mb-2">
             <a 
-              href="www.linkedin.com/in/devajrathore" 
+              href="https://www.linkedin.com/in/devajrathore" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-blue-600 transition-colors"

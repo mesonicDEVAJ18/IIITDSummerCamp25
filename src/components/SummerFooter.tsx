@@ -77,7 +77,7 @@ export const SummerFooter: React.FC = () => {
           </p>
 
           <p className="text-lg md:text-xl mb-4 md:mb-0 md:flex-1 text-center text-blue-900 font-semibold tracking-wide drop-shadow-sm">
-            Crafted with <span className="text-red-500">♥</span> by Devaj Rathore
+            Crafted with <span className="text-red-500">👾</span> by Devaj Rathore
           </p>
 
 
