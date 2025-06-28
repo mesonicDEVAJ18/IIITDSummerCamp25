@@ -181,7 +181,7 @@ export const SiteSelector: React.FC<SiteSelectorProps> = ({ onSelect }) => {
               </svg>
             </a>
           </div>
-          <p>Crafted with 💙 by Devaj Rathore &middot; <a href="mailto:devaj23190@iiitd.ac.in" className="hover:underline hover:text-blue-600">devaj23190@iiitd.ac.in</a></p>
+          <p>Crafted with 👾 by Devaj Rathore &middot; <a href="mailto:devaj23190@iiitd.ac.in" className="hover:underline hover:text-blue-600">devaj23190@iiitd.ac.in</a></p>
         </footer>
       </div>
     </div>

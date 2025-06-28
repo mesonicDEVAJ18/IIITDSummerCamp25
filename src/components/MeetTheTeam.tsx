@@ -16,7 +16,6 @@ const MeetTheTeam: React.FC<MeetTheTeamProps> = ({ theme }) => {
     { name: "Ranjan Bose", role: "IIIT Delhi Director", photo: "/People/RanjanBose.jpg" },
     { name: "Pankaj Jalote", role: "Faculty Coordinator", photo: "/People/PankajJalote.jpg" },
     { name: "Ravi Bhasin", role: "Academic Manager", photo: "/People/RaviBhasin.jpg" },
-    { name: "Raju Biswas", role: "Academic Representative", photo: "/People/RajuBiswas.jpg" },
     {
       name: "Rahul Goel",
       role: "Mentor",
@@ -59,8 +58,8 @@ const MeetTheTeam: React.FC<MeetTheTeamProps> = ({ theme }) => {
     },
   ];
 
-  const faculty = teamMembers.slice(0,4);
-  const students = teamMembers.slice(4);
+  const faculty = teamMembers.slice(0,3);
+  const students = teamMembers.slice(3);
 
   const primaryColor = theme === "summer" ? "text-yellow-400" : "text-blue-600";
   const secondaryColor = theme === "summer" ? "text-blue-600" : "text-yellow-400";
