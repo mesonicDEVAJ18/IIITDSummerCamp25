@@ -2,12 +2,69 @@ import React from 'react';
 import { Sun, BookOpen, ArrowRight } from 'lucide-react';
 
 interface SiteSelectorProps {
-  onSelect: (site: 'summer' | 'tlf') => void;
+  onSelect: (site: 'summer' | 'tlf' | 'archive') => void;
 }
 
 export const SiteSelector: React.FC<SiteSelectorProps> = ({ onSelect }) => {
   return (
     <div className="min-h-screen bg-gray-50 relative overflow-hidden">
+      {/* Floating Themed Navbar */}
+      <nav className="relative z-30 w-full bg-white/50 backdrop-blur-md shadow-[0_4px_12px_rgba(0,0,0,0.1)] border-b-4 border-yellow-400 rounded-b-2xl font-inter">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
+          
+          {/* Logo */}
+          <div className="flex items-center space-x-4">
+            <img
+              src="/IIITDLogo.png"
+              alt="IIITD"
+              className="h-12 w-auto border-2 border-yellow-400 rounded-xl shadow-[4px_4px_0_0_#0077FF]"
+            />
+          </div>
+
+          {/* Desktop Archive Button */}
+          <div className="hidden md:flex items-center space-x-6">
+            <button
+              onClick={() => onSelect('archive')}
+              className="summer-button text-sm  px-4 py-1"
+            >
+              Visit Archive
+            </button>
+          </div>
+
+          {/* Mobile Hamburger */}
+          <div className="md:hidden">
+            <button
+              onClick={() =>
+                document.getElementById('mobile-nav')?.classList.toggle('hidden')
+              }
+              className="p-2 rounded-lg border-2 border-yellow-400 text-blue-600 hover:text-yellow-400 hover:bg-yellow-100 transition-all duration-200"
+            >
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Dropdown */}
+      <div id="mobile-nav" className="hidden md:hidden px-6 pb-4">
+        <button
+          onClick={() => onSelect('archive')}
+          className="summer-button w-full text-center py-3 text-sm mt-2"
+        >
+          Visit Archive
+        </button>
+      </div>
+    </nav>
+
       {/* Background Elements */}
       <div className="fixed inset-0 pointer-events-none">
         <div className="absolute inset-0 pattern-grid opacity-10" />
