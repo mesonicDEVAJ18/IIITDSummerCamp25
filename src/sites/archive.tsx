@@ -9,9 +9,8 @@ interface ArchiveItem {
 }
 
 const archiveData: ArchiveItem[] = [
-//   { title: "Summer Camp Report", file: "/archive/SummerCamp2023.pdf", year: 2023 },
-//   { title: "TLF Summary", file: "/archive/TLF2022.pdf", year: 2022 },
-//   { title: "Annual Programs Overview", file: "/archive/Programs2021.pdf", year: 2021 },
+{ title: "Week 1 Report", file: "/archive/2025_week1.pdf", year: 2025 },
+{ title: "Week 2 Report", file: "/archive/2025_week2.pdf", year: 2025 }
 ];
 
 const groupedByYear = archiveData.reduce((acc: Record<number, ArchiveItem[]>, item) => {
